@@ -216,7 +216,18 @@ Look for log entries indicating round joins/finishes.
 
 ## Step 4: Fix Common Errors
 
-### 🔧 P2PDaemonError (Failed to Connect to Bootstrap Peers)
+### build up error from initial run 
+
+run this 
+```bash
+sudo apt install build-essential python3-dev
+```
+then re run script
+```bash
+./run_rl_swarm.sh
+```
+
+###  P2PDaemonError (Failed to Connect to Bootstrap Peers)
 
 **Test peer connectivity:**
 
@@ -306,7 +317,8 @@ go install github.com/Deep-Commit/gswarm/cmd/gswarm@latest
 ```bash
 # Create screen session
 screen -S gswarm
-
+```
+```bash
 # Start GSwarm
 gswarm
 ```
@@ -314,7 +326,7 @@ gswarm
 **When prompted, enter:**
 - Telegram bot token
 - Chat ID
-- EOA address (from Gensyn dashboard)
+- EOA address [from Gensyn dashboard](https://dashboard.gensyn.ai/)
 
 **Detach:** Press `Ctrl+A`, then `D`
 
