@@ -99,7 +99,7 @@ ssh root@your-vps-ip
 sudo apt update && sudo apt upgrade -y
 
 # Install required packages
-sudo apt install -y python3 python3-venv python3-pip git screen curl wget lsof ca-certificates netcat
+sudo apt install -y python3 python3-venv python3-pip git screen curl wget lsof ca-certificates netcat-traditional
 ```
 
 ### Install Node.js 20.x and Yarn
@@ -157,6 +157,9 @@ cd rl-swarm
 ### Set Up Python Virtual Environment
 
 ```bash
+sudo apt update
+sudo apt install python3.12-venv -y
+
 # Create virtual environment
 python3 -m venv .venv
 
