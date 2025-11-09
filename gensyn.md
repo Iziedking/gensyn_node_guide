@@ -172,7 +172,8 @@ source .venv/bin/activate
 ```bash
 # Create a new screen session
 screen -S gensyn
-
+```
+```bash
 # Run the RL-Swarm script
 ./run_rl_swarm.sh
 ```
